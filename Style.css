@@ -1,0 +1,318 @@
+
+/* =================================
+   GENERAL SETTINGS
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b1120;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* =================================
+   NAVIGATION BAR
+================================= */
+
+header {
+    background-color: #111c33;
+    padding: 18px 6%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #263b5c;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+
+/* =================================
+   HOME / HERO SECTION
+================================= */
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #172554,
+        #1e3a8a
+    );
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.tagline {
+    color: #38bdf8;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.hero-content p {
+    font-size: 17px;
+    color: #cbd5e1;
+    margin-bottom: 30px;
+}
+
+
+/* =================================
+   BUTTONS
+================================= */
+
+.btn {
+    display: inline-block;
+    background-color: #0284c7;
+    color: #ffffff;
+
+    padding: 13px 28px;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0369a1;
+    transform: translateY(-3px);
+}
+
+
+/* =================================
+   COMMON SECTIONS
+================================= */
+
+.section {
+    padding: 75px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 34px;
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    max-width: 700px;
+    margin: 0 auto 35px;
+    color: #cbd5e1;
+}
+
+
+/* =================================
+   INFORMATION CARDS
+================================= */
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 25px;
+    flex-wrap: wrap;
+
+    margin: 35px 0;
+}
+
+.info-card {
+    background-color: #17243b;
+
+    border: 1px solid #263b5c;
+    border-radius: 12px;
+
+    padding: 30px;
+
+    flex: 1;
+    min-width: 220px;
+    max-width: 340px;
+
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-7px);
+    border-color: #38bdf8;
+}
+
+.info-card h3 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    color: #cbd5e1;
+}
+
+
+/* =================================
+   PASSWORD ANALYZER
+================================= */
+
+.analyzer-section {
+    background-color: #111c33;
+}
+
+.analyzer-placeholder {
+    max-width: 600px;
+    margin: auto;
+
+    padding: 40px 20px;
+
+    border: 2px dashed #38bdf8;
+    border-radius: 15px;
+
+    background-color: #17243b;
+}
+
+.lock-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.analyzer-placeholder h3 {
+    color: #38bdf8;
+    margin-bottom: 12px;
+}
+
+.analyzer-placeholder p {
+    color: #cbd5e1;
+}
+
+
+/* =================================
+   CYBERSECURITY TIPS
+================================= */
+
+.tips-section {
+    background-color: #0b1120;
+}
+
+.tips-container {
+    max-width: 650px;
+    margin: auto;
+    text-align: left;
+}
+
+.tips-container p {
+    background-color: #17243b;
+
+    padding: 15px 20px;
+    margin: 12px 0;
+
+    border-radius: 8px;
+    border: 1px solid #263b5c;
+
+    color: #e2e8f0;
+}
+
+
+/* =================================
+   FOOTER
+================================= */
+
+footer {
+    background-color: #060b16;
+
+    text-align: center;
+    padding: 35px 15px;
+
+    color: #94a3b8;
+
+    border-top: 1px solid #263b5c;
+}
+
+footer h3 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+
+/* =================================
+   MOBILE RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .section h2 {
+        font-size: 28px;
+    }
+
+    .info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-card {
+        width: 100%;
+    }
+
+}
