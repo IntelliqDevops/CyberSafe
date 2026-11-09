@@ -316,3 +316,129 @@ footer h3 {
     }
 
 }
+/* PASSWORD ANALYZER INPUT */
+
+.password-input-container {
+    max-width: 450px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.password-input-container input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #38bdf8;
+    background-color: #0b1120;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.password-input-container input:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 8px #0284c7;
+}
+
+#passwordResult {
+    margin-top: 25px;
+    color: #ffffff;
+}
+
+#passwordResult h3 {
+    margin-bottom: 10px;
+}
+
+#passwordResult p {
+    margin: 8px 0;
+    color: #cbd5e1;
+}
+
+#passwordResult ul {
+    list-style-position: inside;
+    margin-top: 10px;
+    color: #cbd5e1;
+}
+
+#passwordResult li {
+    margin: 6px 0;
+}
+
+/* PASSWORD VISIBILITY AND STRENGTH */
+
+.password-field-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.password-field-wrapper input {
+    flex: 1;
+    min-width: 0;
+}
+
+.show-password-btn {
+    padding: 14px 18px;
+    background-color: #263b5c;
+    color: white;
+    border: 1px solid #38bdf8;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.show-password-btn:hover {
+    background-color: #0284c7;
+}
+
+.strength-meter {
+    width: 100%;
+    height: 12px;
+    background-color: #263b5c;
+    border-radius: 10px;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+.strength-meter-fill {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.4s ease;
+}
+
+/* Password strength bar */
+.strength-meter {
+    width: 100%;
+    height: 12px;
+    background-color: #263b5c;
+    border-radius: 10px;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+.strength-meter-fill {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.4s ease;
+}
+
+/* PASSWORD STRENGTH COLOURED BAR */
+
+.strength-meter {
+    width: 100%;
+    height: 14px;
+    background-color: #263b5c;
+    border-radius: 10px;
+    margin: 15px 0;
+    overflow: hidden;
+    display: block;
+}
+
+.strength-meter-fill {
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: width 0.4s ease;
+}
